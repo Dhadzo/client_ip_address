@@ -9,7 +9,7 @@ client = MongoClient(host=['mongo:27017'], document_class=dict, tz_aware=False, 
 db = client['mydb']
 ip_collection = db['ip']
 
-@app.route('/')
+@app.route('/api/myip')
 def get_client_ip():
   
   try:
